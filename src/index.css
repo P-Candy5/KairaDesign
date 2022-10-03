@@ -26,6 +26,10 @@ code {
   margin-top: 42px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .faq {
   display: flex;
   column-gap: 48px;
@@ -37,6 +41,7 @@ code {
   display: flex;
   border: 1px solid #31aab7;
   border-radius: 10px;
+  cursor: pointer;
 }
 .faq li:last-child > button > div {
   display: flex;
@@ -61,7 +66,7 @@ code {
   column-gap: 30px;
 }
 
-.faq > li {
+.faq > li > a {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -266,10 +271,16 @@ code {
 }
 
 .imageHolder div {
+  border-bottom: 6px solid #ffff;
+}
+
+.imageHolder div {
   margin-bottom: 32px;
 }
 
 .imageHolder div > img {
+  display: flex;
+  justify-content: center;
   margin-bottom: 24px;
 }
 
@@ -374,6 +385,7 @@ code {
   box-shadow: 4px 4px 20px rgba(64, 67, 150, 0.12);
   border-radius: 14px;
   margin-top: 194px;
+  position: relative;
 }
 .questions > p {
   font-family: "Montserrat";
@@ -398,14 +410,21 @@ code {
   color: rgba(13, 8, 32, 0.68);
 }
 
-.bottomLine {
+.bottomLine,
+.greyLine {
   background-color: #31aab7;
+
   width: 80px;
   height: 8px;
   bottom: 0;
-  padding-bottom: -120px;
+
   display: flex;
-  position: relative;
+  position: absolute;
+  border-radius: 0px 9px 0 14px;
+}
+
+.greyLine {
+  background-color: #455154;
 }
 
 .sendButon {
@@ -451,4 +470,88 @@ code {
   margin-top: 62px;
   display: flex;
   column-gap: 19.5px;
+}
+
+footer {
+  background-color: #282b36;
+}
+
+.sectionFooter {
+  padding-top: 123px;
+  margin-left: 129px;
+  margin-right: 130.5px;
+}
+.kairaFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 130px;
+  margin-bottom: 96px;
+}
+
+.contactFooter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contactFooter div > div p > a {
+  text-decoration: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ffffff;
+}
+
+.contactFooter div > div p {
+  padding-bottom: 16px;
+}
+
+.contactFooter div > div {
+  padding-top: 32px;
+}
+
+.contactFooter div > h4 {
+  color: #fff;
+}
+
+.kairaFooter div:first-child > p {
+  padding-top: 37.88px;
+  width: 294px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
+
+  color: #ffffff;
+}
+
+.blueApp {
+  display: flex;
+  align-items: center;
+  column-gap: 31px;
+}
+
+.blueApp > div {
+  display: flex;
+  column-gap: 19.5px;
+}
+
+.social {
+  padding-top: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blueApp > p {
+  color: #ffff;
+}
+
+.media {
+  column-gap: 20px;
+  display: flex;
 }
