@@ -1,5 +1,13 @@
 import React from "react";
-import { CollabImages } from "./CollabImages";
+// import { CollabImages } from "./CollabImages";
+
+export const CollabImages = ({ item }) => {
+  return (
+    <>
+      <img src={item} />
+    </>
+  );
+};
 
 export const Collaboration = () => {
   return (

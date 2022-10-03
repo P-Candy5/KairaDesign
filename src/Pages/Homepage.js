@@ -8,7 +8,7 @@ import {
   Collaboration,
   GetApp,
   Questions,
-} from "../Components/Landing Sub-Pages/index";
+} from "../Components/LandingSub-Pages/index";
 
 export const Homepage = () => {
   return (
