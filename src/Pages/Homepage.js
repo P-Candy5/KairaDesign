@@ -9,13 +9,12 @@ import {
   GetApp,
   Questions,
 } from "../Components/LandingSub-Pages/index";
+import { LandingLayout } from "../layouts/LandingLayout";
 
 export const Homepage = () => {
   return (
-    <>
+    <LandingLayout>
       <main>
-        <Top />
-
         <Illustration />
 
         <Works />
@@ -27,10 +26,6 @@ export const Homepage = () => {
 
         <GetApp />
       </main>
-
-      <footer>
-        <Footer />
-      </footer>
-    </>
+    </LandingLayout>
   );
 };
