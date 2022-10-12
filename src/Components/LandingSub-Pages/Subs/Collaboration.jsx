@@ -1,13 +1,13 @@
 import React from "react";
 // import { CollabImages } from "./CollabImages";
 
-export const CollabImages = ({ item }) => {
-  return (
-    <>
-      <img src={item} />
-    </>
-  );
-};
+// export const CollabImages = ({ item }) => {
+//   return (
+//     <>
+//       <img src={item} />
+//     </>
+//   );
+// };
 
 export const Collaboration = () => {
   return (
@@ -21,7 +21,8 @@ export const Collaboration = () => {
           "./images/hexagon.svg",
           "./images/company.svg",
         ].map((item, idx) => (
-          <CollabImages item={item} />
+          // <CollabImages item={item} />
+          <img src={item} />
         ))}
       </div>
     </section>

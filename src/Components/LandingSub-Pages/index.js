@@ -7,6 +7,6 @@ export * from "./Subs/Diagram";
 export * from "./Subs/Collaboration";
 export * from "./Subs/GetApp";
 export * from "./Subs/Questions";
-// export * from "./Subs/CollabImages";
 export * from "./Subs/Testimony";
 export * from "./Subs/MapWorks";
+export * from "./Subs/NewsletterModal";

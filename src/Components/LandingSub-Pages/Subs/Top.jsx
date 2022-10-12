@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Top = () => {
   return (
@@ -12,10 +13,10 @@ export const Top = () => {
             <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <Link to="/contact-us">Contact Us</Link>
           </li>
           <li>
-            <a href="#">FAQ</a>
+            <Link to="/Faq">FAQ</Link>
           </li>
           <li>
             <button>

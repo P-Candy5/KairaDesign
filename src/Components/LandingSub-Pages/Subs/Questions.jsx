@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Faq } from "./Faq";
 const faqs = [
   {
@@ -35,7 +36,9 @@ export const Questions = () => {
         ))}
       </div>
       <div className="sendButon">
-        <button>Send more</button>
+        <button>
+          <Link to="./Faq">Send more</Link>
+        </button>
       </div>
     </section>
   );

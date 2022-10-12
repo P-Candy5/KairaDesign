@@ -1,6 +1,10 @@
 import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { NewsletterModal } from "./NewsletterModal";
 
 export const Footer = () => {
+  const [modal, setModal] = useState(false);
   return (
     <section className="sectionFooter">
       <section className="kairaFooter">
@@ -31,7 +35,7 @@ export const Footer = () => {
             <h4>Contact Us</h4>
             <div>
               <p>
-                <a href="#">Newsletter</a>
+                <a href="#">{<NewsletterModal />}Newsletter</a>
               </p>
               <p>
                 <a href="#">Send us a message</a>
@@ -47,7 +51,7 @@ export const Footer = () => {
               </p>
 
               <p>
-                <a href="#">Terms of Service</a>
+                <Link to="/privacy">Terms of Service</Link>
               </p>
             </div>
           </div>
