@@ -10,3 +10,4 @@ export * from "./Subs/Questions";
 export * from "./Subs/Testimony";
 export * from "./Subs/MapWorks";
 export * from "./Subs/NewsletterModal";
+export * from "./Subs/AllTestimonies";

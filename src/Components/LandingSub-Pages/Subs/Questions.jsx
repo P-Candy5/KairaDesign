@@ -26,6 +26,9 @@ export const Questions = () => {
     <section className="faqBlock">
       <h2>Frequently Asked Questions</h2>
       <div className="block">
+        <div>
+          <img src="./images/back.svg" />
+        </div>
         {faqs.map((item, idx) => (
           <Faq item={item} />
           // <Faq
@@ -34,6 +37,10 @@ export const Questions = () => {
           //   useClass={item.bottomClass}
           // />
         ))}
+
+        <div>
+          <img src="./images/forward.svg" />
+        </div>
       </div>
       <div className="sendButon">
         <button>

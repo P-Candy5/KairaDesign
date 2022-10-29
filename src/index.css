@@ -380,15 +380,23 @@ a {
 .block {
   display: flex;
   justify-content: center;
+  align-items: center;
   column-gap: 47px;
   margin-bottom: 70px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 128px;
 }
 
 .questions {
   width: 362px;
   box-shadow: 4px 4px 20px rgba(64, 67, 150, 0.12);
   border-radius: 14px;
-  margin-top: 194px;
+  /* margin-top: 194px; */
   position: relative;
 }
 .questions > p {
@@ -443,7 +451,14 @@ a {
   box-shadow: 0px 0.73544px 1.47088px rgba(16, 24, 40, 0.05);
   border-radius: 5.88352px;
   border: 1px solid #31aab7;
+}
+
+.sendButon > button > a {
   color: #ffff;
+}
+
+.forward {
+  padding-top: 48px;
 }
 
 .available > h2 {
@@ -564,9 +579,12 @@ footer {
   background-color: #fafbff;
 }
 
+.message div:last-child > button > a {
+  color: #ffff;
+}
+
 .message div:last-child > button {
   background-color: #31aab7;
-  color: #ffff;
   padding: 21px 44px;
   background-color: #31aab7;
   border: 1px solid#31AAB7;
@@ -679,8 +697,15 @@ footer {
 
 .contact {
   display: grid;
+  /* align-items: center; */
   grid-template-columns: 1fr 1fr;
   margin-left: 106px;
+  margin-bottom: 330.38px;
+}
+
+contact div:first-child {
+  display: flex;
+  align-items: center;
 }
 
 .contact div:last-child {
@@ -788,7 +813,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 100;
+}
+a {
+  cursor: pointer;
 }
 
 .subscribe {
@@ -885,4 +913,48 @@ footer {
 
 .subscribe div:last-child > section:last-child {
   margin-top: 48px;
+}
+
+.hide {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.kairaFlex {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+/* .backer {
+  background-color: red;
+  position: absolute;
+  z-index: 999;
+} */
+
+.contactButton > button {
+  background-color: #31aab7;
+  padding: 30px 83px 30px 84px;
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 0px;
+  border-radius: 8px;
+  border: 1px solid #31aab7;
+  color: #fcfcfc;
+}
+
+.contactButton {
+  margin-top: 40px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: left;
+}
+
+.forward > img {
+  cursor: pointer;
 }

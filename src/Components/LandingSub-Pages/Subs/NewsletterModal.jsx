@@ -1,11 +1,21 @@
 import React from "react";
+import { useState } from "react";
 
-export const NewsletterModal = ({ isOpen }) => {
+export const NewsletterModal = ({ isOpen = true, setModal }) => {
   return (
-    <section className="newsletter">
-      <div className="subscribe">
+    <section
+      // className="newsletter"
+      className={" newsletter"}
+      onClick={() => setModal(false)}
+    >
+      <div
+        className="subscribe"
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         {/* <div className="hold"> */}
-        <div>
+        <div className="forward" onClick={() => setModal(false)}>
           <img src="./images/naviButton.svg" />
         </div>
         <div>

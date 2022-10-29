@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Faq, Footer, Top } from "../Components/LandingSub-Pages";
 import { LandingLayout } from "../layouts/LandingLayout";
 
@@ -27,9 +28,17 @@ export const FaqPage = () => {
       <section className="faqBlock">
         <h2>Frequently Asked Questions</h2>
         <div className="block">
+          <div>
+            <img src="./images/back.svg" />
+          </div>
+
           {faqs.map((item, idx) => (
             <Faq item={item} />
           ))}
+
+          <div>
+            <img src="./images/forward.svg" />
+          </div>
         </div>
       </section>
 
@@ -44,7 +53,9 @@ export const FaqPage = () => {
           </div>
 
           <div>
-            <button>Send message</button>
+            <button>
+              <Link to="/contact-us">Send message</Link>
+            </button>
           </div>
         </div>
       </section>
